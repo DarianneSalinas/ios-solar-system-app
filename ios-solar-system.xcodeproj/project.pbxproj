@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		541E35E0283772CC00D8B350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E35DF283772CC00D8B350 /* AppDelegate.swift */; };
 		541E35E2283772CC00D8B350 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E35E1283772CC00D8B350 /* SceneDelegate.swift */; };
-		541E35E4283772CC00D8B350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E35E3283772CC00D8B350 /* ViewController.swift */; };
 		541E35E7283772CC00D8B350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541E35E5283772CC00D8B350 /* Main.storyboard */; };
 		541E35E9283772CE00D8B350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541E35E8283772CE00D8B350 /* Assets.xcassets */; };
 		541E35EC283772CE00D8B350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541E35EA283772CE00D8B350 /* LaunchScreen.storyboard */; };
+		541E35F428377CF000D8B350 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E35F328377CF000D8B350 /* Planet.swift */; };
+		541E35F72837803A00D8B350 /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E35F62837803A00D8B350 /* PlanetController.swift */; };
+		541E35FA2837888F00D8B350 /* PlanetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E35F92837888F00D8B350 /* PlanetListViewController.swift */; };
+		541E35FF2837975600D8B350 /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E35FE2837975600D8B350 /* PlanetDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		541E35DC283772CC00D8B350 /* ios-solar-system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-solar-system.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		541E35DF283772CC00D8B350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		541E35E1283772CC00D8B350 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		541E35E3283772CC00D8B350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		541E35E6283772CC00D8B350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		541E35E8283772CE00D8B350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		541E35EB283772CE00D8B350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		541E35ED283772CE00D8B350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541E35F328377CF000D8B350 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		541E35F62837803A00D8B350 /* PlanetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
+		541E35F92837888F00D8B350 /* PlanetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListViewController.swift; sourceTree = "<group>"; };
+		541E35FE2837975600D8B350 /* PlanetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,8 @@
 		541E35D3283772CC00D8B350 = {
 			isa = PBXGroup;
 			children = (
+				541E35F82837804600D8B350 /* Model Controller */,
+				541E35F528377ED000D8B350 /* Model */,
 				541E35DE283772CC00D8B350 /* ios-solar-system */,
 				541E35DD283772CC00D8B350 /* Products */,
 			);
@@ -58,13 +66,38 @@
 			children = (
 				541E35DF283772CC00D8B350 /* AppDelegate.swift */,
 				541E35E1283772CC00D8B350 /* SceneDelegate.swift */,
-				541E35E3283772CC00D8B350 /* ViewController.swift */,
 				541E35E5283772CC00D8B350 /* Main.storyboard */,
+				541E35FB2837889E00D8B350 /* View Controllers */,
 				541E35E8283772CE00D8B350 /* Assets.xcassets */,
 				541E35EA283772CE00D8B350 /* LaunchScreen.storyboard */,
 				541E35ED283772CE00D8B350 /* Info.plist */,
 			);
 			path = "ios-solar-system";
+			sourceTree = "<group>";
+		};
+		541E35F528377ED000D8B350 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				541E35F328377CF000D8B350 /* Planet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		541E35F82837804600D8B350 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				541E35F62837803A00D8B350 /* PlanetController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		541E35FB2837889E00D8B350 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				541E35FE2837975600D8B350 /* PlanetDetailViewController.swift */,
+				541E35F92837888F00D8B350 /* PlanetListViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				541E35E4283772CC00D8B350 /* ViewController.swift in Sources */,
+				541E35FA2837888F00D8B350 /* PlanetListViewController.swift in Sources */,
 				541E35E0283772CC00D8B350 /* AppDelegate.swift in Sources */,
 				541E35E2283772CC00D8B350 /* SceneDelegate.swift in Sources */,
+				541E35F428377CF000D8B350 /* Planet.swift in Sources */,
+				541E35FF2837975600D8B350 /* PlanetDetailViewController.swift in Sources */,
+				541E35F72837803A00D8B350 /* PlanetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
